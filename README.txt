@@ -46,13 +46,6 @@ Insert the button in your pages or posts with this shortcode
 = MailChimp API =
 *	Automatically add email addresses to your MailChimp user list(s) when payment are processed on your PayPal account.
 
-= Going to launch soon =
-= Version 1.1.1 include below feature =
-*	display payment revenue in different type of charts with shortcode functionality
-*	Create unlimited payment button using different shortcode
-*	Payment confirmation email visual editor
-* 	your suggestion I will include in this versions
-
 
 
 == Installation ==
