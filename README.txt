@@ -41,7 +41,7 @@ Insert the button in your pages or posts with this shortcode
 
 = Payment Confirmation Email =
 * Admin ( store admin )
-* Donor ( PayPal payer email)
+* Customer ( PayPal payer email)
 
 = MailChimp API =
 *	Automatically add email addresses to your MailChimp user list(s) when payment are processed on your PayPal account.
