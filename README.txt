@@ -72,6 +72,16 @@ Easy steps to install the plugin:
 *	Activate the plugin through the 'Plugins' menu in WordPress.
 *	Go to Settings => Paypal Payment
 
+== Screenshots ==
+
+1. PayPal Buy Now Button.
+2. PayPal General setting.
+3. PayPal Buy Now Widget.
+4. Send Email After purchase.
+5. Payment List.
+6. MailChimp Integration.
+7. Help Page.
+
 
 == Frequently Asked Questions ==
 = Where can I get support? =
@@ -91,17 +101,6 @@ Easy steps to install the plugin:
 
 = does this plugin provide monthly recurring option? =
 *	Yes. 
-
-== Screenshots ==
-
-1. PayPal Buy Now Button.
-2. PayPal General setting.
-3. PayPal Buy Now Widget.
-4. Send Email After purchase.
-5. Payment List.
-6. MailChimp Integration.
-7. Help Page.
-
 
 == Changelog ==
 = 1.0.1 =
