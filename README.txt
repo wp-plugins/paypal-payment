@@ -94,19 +94,23 @@ Easy steps to install the plugin:
 
 == Screenshots ==
 
-1. Setting up plugin page.
-2. plugin help page.
-3. widget setting page.
-4. shortcode page.
-5. payment list.
-6. Email sending page.
-7. Provided MailChimp functionality.
+1. PayPal Buy Now Button.
+2. PayPal General setting.
+3. PayPal Buy Now Widget.
+4. Send Email After purchase.
+5. Payment List.
+6. MailChimp Integration.
+7. Help Page.
+
 
 == Changelog ==
+= 1.0.1 =
+*       Add new currency list
+*       Add Not found Icon
 = 1.0.0 =
 *	Release Date - 1 March, 1015
 *  	First Version
 
 
 == Upgrade Notice ==
-Easy to use add a PayPal Payment button as a Page, Post and Widget with a shortcode.
+Add Not found Icon, Add new currency list
