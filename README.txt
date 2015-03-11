@@ -103,6 +103,8 @@ Easy steps to install the plugin:
 *	Yes. 
 
 == Changelog ==
+= 1.0.2 =
+*	Add icon url
 = 1.0.1 =
 *       Add new currency list
 *       Add Not found Icon

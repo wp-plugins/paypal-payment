@@ -49,7 +49,7 @@ class MBJ_PayPal_Payment {
     public function __construct() {
 
         $this->plugin_name = 'paypal-payment';
-        $this->version = '1.0.1';
+        $this->version = '1.0.2';
 
         $this->load_dependencies();
         $this->set_locale();
@@ -63,7 +63,7 @@ class MBJ_PayPal_Payment {
 
         add_action('paypal_payment_api_ipn_handler', array($this, 'paypal_payment_api_ipn_handler'));
         $prefix = is_network_admin() ? 'network_admin_' : '';
-        add_filter("{$prefix}plugin_action_links_" . PDW_PLUGIN_BASENAME, array($this, 'plugin_action_links'), 10, 4);
+        add_filter("{$prefix}plugin_action_links_" . PPW_PLUGIN_BASENAME, array($this, 'plugin_action_links'), 10, 4);
 
         add_filter('widget_text', 'do_shortcode');
     }

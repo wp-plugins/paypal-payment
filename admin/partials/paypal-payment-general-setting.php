@@ -560,7 +560,7 @@ Store Admin";
 
         if (empty($mailchimp_lists) || get_option('paypal_payments_force_refresh') == 'yes') {
 
-            include_once PDW_PLUGIN_DIR . '/includes/class-paypal-payment-mcapi.php';
+            include_once PPW_PLUGIN_DIR . '/includes/class-paypal-payment-mcapi.php';
 
             $mailchimp_api_key = get_option('mailchimp_api_key');
             $apikey = (isset($mailchimp_api_key)) ? $mailchimp_api_key : '';

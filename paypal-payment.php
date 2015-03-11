@@ -6,7 +6,7 @@
  * Plugin Name:       PayPal Payment
  * Plugin URI:        http://www.mbjtechnolabs.com
  * Description:       Easy to use add a PayPal Payment button as a Page, Post and Widget with a shortcode
- * Version:           1.0.1
+ * Version:           1.0.2
  * Author:            phpwebcreators
  * Author URI:        http://www.mbjtechnolabs.com
  * License:           GNU General Public License v3.0
@@ -19,17 +19,17 @@ if (!defined('WPINC')) {
     die;
 }
 
-if (!defined('PDW_PLUGIN_URL'))
-    define('PDW_PLUGIN_URL', plugin_dir_url(__FILE__));
+if (!defined('PPW_PLUGIN_URL'))
+    define('PPW_PLUGIN_URL', plugin_dir_url(__FILE__));
 
-if (!defined('PDW_PLUGIN_DIR'))
-    define('PDW_PLUGIN_DIR', dirname(__FILE__));
+if (!defined('PPW_PLUGIN_DIR'))
+    define('PPW_PLUGIN_DIR', dirname(__FILE__));
 
 /**
  * define plugin basename
  */
-if (!defined('PDW_PLUGIN_BASENAME')) {
-    define('PDW_PLUGIN_BASENAME', plugin_basename(__FILE__));
+if (!defined('PPW_PLUGIN_BASENAME')) {
+    define('PPW_PLUGIN_BASENAME', plugin_basename(__FILE__));
 }
 
 /**

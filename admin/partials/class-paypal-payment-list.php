@@ -68,7 +68,7 @@ class MBJ_PayPal_Payment_List {
             'hierarchical' => false, // Hierarchical causes memory issues - WP loads all records!
             'rewrite' => array('slug' => 'paypal_payment_list'),
             'query_var' => true,
-            'menu_icon' => PDW_PLUGIN_URL . 'admin/images/paypal-payment.png',
+            'menu_icon' => PPW_PLUGIN_URL . 'admin/images/paypal-payment.png',
             'supports' => array('', ''),
             'has_archive' => true,
             'show_in_nav_menus' => true
