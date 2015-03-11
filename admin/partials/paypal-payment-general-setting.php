@@ -207,7 +207,7 @@ Store Admin";
         $fields[] = array(
             'title' => __('Return Page', 'paypal-payment'),
             'id' => 'paypal_payment_return_page',
-            'desc' => __('URL to which the donator comes to after completing the payment; for example, a URL on your site that displays a "Thank you for your payment".', 'paypal-payment'),
+            'desc' => __('URL to which the Payer comes to after completing the payment; for example, a URL on your site that displays a "Thank you for your payment".', 'paypal-payment'),
             'type' => 'single_select_page',
             'default' => '',
             'class' => 'chosen_select_nostd',
