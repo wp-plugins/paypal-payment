@@ -33,7 +33,7 @@ class MBJ_PayPal_Payment_Admin_Widget extends WP_Widget {
                     $button_url = 'https://www.paypalobjects.com/en_AU/i/btn/btn_paynow_LG.gif';
                     break;
                 case 'button3':
-                    $button_url = 'https://www.paypalobjects.com/en_AU/i/btn/btn_buynow_LG.gif';
+                    $button_url = !empty($paypal_payment_custom_button) ? $paypal_payment_custom_button : 'https://www.paypalobjects.com/en_AU/i/btn/btn_buynow_LG.gif';
                     break;
                
             }
@@ -79,7 +79,7 @@ class MBJ_PayPal_Payment_Admin_Widget extends WP_Widget {
                     $button_url = 'https://www.paypalobjects.com/en_AU/i/btn/btn_paynow_LG.gif';
                     break;
                 case 'button3':
-                    $button_url = 'https://www.paypalobjects.com/en_AU/i/btn/btn_buynow_LG.gif';
+                    $button_url = !empty($paypal_payment_custom_button) ? $paypal_payment_custom_button : 'https://www.paypalobjects.com/en_AU/i/btn/btn_buynow_LG.gif';
                     break;
                
             }
