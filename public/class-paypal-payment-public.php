@@ -69,14 +69,14 @@ class MBJ_PayPal_Payment_Public {
                     $button_url = 'https://www.paypalobjects.com/en_AU/i/btn/btn_paynow_LG.gif';
                     break;
                 case 'button3':
-                    $button_url = 'https://www.paypal.com/en_US/i/btn/btn_donateCC_LG.gif';
+                    $button_url = 'https://www.paypalobjects.com/en_AU/i/btn/btn_buynow_LG.gif';
                     break;
                
             }
         } elseif (isset($paypal_payment_custom_button) && !empty($paypal_payment_custom_button)) {
             $button_url = $paypal_payment_custom_button;
         } else {
-            $button_url = 'https://www.paypal.com/en_US/i/btn/btn_donate_LG.gif';
+            $button_url = 'https://www.paypalobjects.com/en_AU/i/btn/btn_buynow_LG.gif';
         }
 
         if (isset($paypal_payment_PayPal_sandbox) && $paypal_payment_PayPal_sandbox == 'yes') {

@@ -103,6 +103,8 @@ Easy steps to install the plugin:
 *	Yes. 
 
 == Changelog ==
+= 1.0.3 =
+*       Resolved Button Url
 = 1.0.2 =
 *	Add icon url
 = 1.0.1 =
