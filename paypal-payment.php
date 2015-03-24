@@ -3,7 +3,7 @@
 /**
  *
  * @wordpress-plugin
- * Plugin Name:       PayPal Payment
+ * Plugin Name:       PayPal Payment + MailChimp
  * Plugin URI:        http://www.mbjtechnolabs.com
  * Description:       Easy to use add a PayPal Payment button as a Page, Post and Widget with a shortcode
  * Version:           1.0.3
