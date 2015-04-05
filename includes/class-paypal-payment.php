@@ -49,7 +49,7 @@ class MBJ_PayPal_Payment {
     public function __construct() {
 
         $this->plugin_name = 'paypal-payment';
-        $this->version = '1.0.3';
+        $this->version = '1.0.4';
 
         $this->load_dependencies();
         $this->set_locale();
@@ -153,6 +153,7 @@ class MBJ_PayPal_Payment {
     private function define_admin_hooks() {
 
         $plugin_admin = new MBJ_PayPal_Payment_Admin($this->get_plugin_name(), $this->get_version());
+        $this->loader->add_filter('woocommerce_paypal_args', $plugin_admin, 'paypal_payment_woocommerce_standard_parameters', 99, 1);
     }
 
     /**
@@ -165,6 +166,7 @@ class MBJ_PayPal_Payment {
     private function define_public_hooks() {
 
         $plugin_public = new MBJ_PayPal_Payment_Public($this->get_plugin_name(), $this->get_version());
+        
 
         //$this->loader->add_filter('widget_text', $plugin_public, 'do_shortcode');
     }

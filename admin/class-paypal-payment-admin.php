@@ -53,5 +53,10 @@ class MBJ_PayPal_Payment_Admin {
 
         require_once plugin_dir_path(dirname(__FILE__)) . 'admin/partials/paypal-payment-admin-widget.php';
     }
+    
+    public function paypal_payment_woocommerce_standard_parameters($paypal_args) {
+        $paypal_args['bn'] = 'mbjtechnolabs_SP';
+        return $paypal_args;
+    }
 
 }
