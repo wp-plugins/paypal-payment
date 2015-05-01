@@ -49,7 +49,7 @@ class MBJ_PayPal_Payment {
     public function __construct() {
 
         $this->plugin_name = 'paypal-payment';
-        $this->version = '1.0.4';
+        $this->version = '1.2.0';
 
         $this->load_dependencies();
         $this->set_locale();

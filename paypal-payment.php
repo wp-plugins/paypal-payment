@@ -6,7 +6,7 @@
  * Plugin Name:       PayPal Payment + MailChimp
  * Plugin URI:        http://webs-spider.com/
  * Description:       Easy to use add a PayPal Payment button as a Page, Post and Widget with a shortcode
- * Version:           1.0.5
+ * Version:           1.2.0
  * Author:            johnwickjigo
  * Author URI:        http://www.mbjtechnolabs.com
  * License:           GNU General Public License v3.0
