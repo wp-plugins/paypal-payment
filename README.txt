@@ -18,6 +18,7 @@ This easy to use PayPal Payment allows you to place a PayPal payment button with
 
 = Shortcode =
 
+
 Insert the button in your pages or posts with this shortcode
 
 `[paypal_payment]`
