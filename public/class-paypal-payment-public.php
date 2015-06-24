@@ -46,7 +46,7 @@ class MBJ_PayPal_Payment_Public {
         add_shortcode('paypal_payment', array($this, 'paypal_payment_button_generator'));
     }
 
-    public function paypal_payment_button_generator() {
+    public function paypal_payment_button_generator($atts, $content = null) {
 
         $paypal_payment_custom_button = get_option('paypal_payment_custom_button');
         $paypal_payment_button_image = get_option('paypal_payment_button_image');
@@ -102,16 +102,21 @@ class MBJ_PayPal_Payment_Public {
 
         $output .= '<input type="hidden" name="cmd" value="_xclick">';
 
-        if (isset($paypal_payment_item_name) && !empty($paypal_payment_item_name)) {
-            $output .= '<input type="hidden" name="item_name" value="' . esc_attr($paypal_payment_item_name) . '">';
-        } else {
-            $output .= '<input type="hidden" name="item_name" value="cup of coffee">';
+        if( !isset($atts['amount']) ) {
+            if (isset($paypal_payment_item_name) && !empty($paypal_payment_item_name)) {
+                $output .= '<input type="hidden" name="item_name" value="' . esc_attr($paypal_payment_item_name) . '">';
+            } else {
+                $output .= '<input type="hidden" name="item_name" value="cup of coffee">';
+            }
         }
 
-       if (isset($paypal_payment_amount) && !empty($paypal_payment_amount)) {
-            $output .= '<input type="hidden" name="amount" value="' . esc_attr($paypal_payment_amount) . '">';
-        }
+       if(!isset($atts['amount'])) {
+            if (isset($paypal_payment_amount) && !empty($paypal_payment_amount)) {
+                 $output .= '<input type="hidden" name="amount" value="' . esc_attr($paypal_payment_amount) . '">';
+             }
+       }
 
+        
         if (isset($paypal_payment_currency) && !empty($paypal_payment_currency)) {
             $output .= '<input type="hidden" name="currency_code" value="' . esc_attr($paypal_payment_currency) . '">';
         }
@@ -123,6 +128,14 @@ class MBJ_PayPal_Payment_Public {
         if (isset($paypal_payment_return_page) && !empty($paypal_payment_return_page)) {
             $paypal_payment_return_page = get_permalink($paypal_payment_return_page);
             $output .= '<input type="hidden" name="return" value="' . esc_url($paypal_payment_return_page) . '">';
+        }
+        
+        if (isset($atts) && !empty($atts)) {
+            foreach ($atts as $attskey => $attsvalue) {
+                if ((isset($attskey) && !empty($attskey)) && (isset($attsvalue) && !empty($attsvalue) )) {
+                    $output .= '<input type="hidden" name="' . esc_attr($attskey) . '" value="' . esc_attr($attsvalue) . '">';
+                }
+            }
         }
 
         $output .= '<input type="image" name="submit" border="0" src="' . esc_url($button_url) . '" alt="PayPal - The safer, easier way to pay online">';

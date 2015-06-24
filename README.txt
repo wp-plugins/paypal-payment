@@ -22,6 +22,13 @@ This easy to use PayPal Payment allows you to place a PayPal payment button with
 Insert the button in your pages or posts with this shortcode
 
 `[paypal_payment]`
+`[paypal_payment item_name="YOUR ITEM NAME" amount="ITEM PRICE"]`
+
+
+For WordPress Template file
+
+`<?php echo do_shortcode( '[paypal_payment]' ); ?>`
+`<?php echo do_shortcode( '[paypal_payment item_name="YOUR ITEM NAME" amount="ITEM PRICE"]' ); ?>`
 
 * Provide widget
 * Provide custome button
@@ -105,7 +112,10 @@ Easy steps to install the plugin:
 *	Yes. 
 
 == Changelog ==
-* 1.2.0      
+= 1.2.1 =
+*       6/24/2015
+*       add parameter in shortcode
+= 1.2.0 =
 *       1/5/2015 ( 1.2.0 )
 *       Compatible with WordPress 4.2.1 version
 = 1.0.3 =
