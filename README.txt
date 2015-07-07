@@ -28,7 +28,7 @@ Insert the button in your pages or posts with this shortcode
 For WordPress Template file
 
 `<?php echo do_shortcode( '[paypal_payment]' ); ?>`
-`<?php echo do_shortcode( '[paypal_payment item_name="YOUR ITEM NAME" amount="ITEM PRICE"]' ); ?>`
+ `<?php echo do_shortcode( '[paypal_payment item_name="YOUR ITEM NAME" amount="ITEM PRICE"]' ); ?>`
 
 * Provide widget
 * Provide custome button
